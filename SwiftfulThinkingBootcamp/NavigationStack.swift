@@ -51,6 +51,44 @@ struct NavigationStackView: View {
                     .navigationDestination(for: String.self) { fruit in  // Destination for String
                         Text("Another Screen: \(fruit)")
                     }
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarLeading) {
+                            Image(systemName: "xmark")
+                        }
+                        
+                        ToolbarItem(placement: .navigationBarLeading) {
+                            Image(systemName: "house.fill")
+                        }
+                        
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            Image(systemName: "gear")
+                        }
+                        
+                        ToolbarItem(placement: .bottomBar) {
+                            Image(systemName: "person.fill")
+                        }
+                        
+                        ToolbarItem(placement: .keyboard) {
+                            Image(systemName: "heart.fill")
+                        }
+                    }
+                    .toolbarTitleMenu {  // Displays the menu over clicking the toolbar Title
+                        Button {
+                            stackpath.append("Screen one")
+                        } label: {
+                            Text("Screen One")
+                        }
+                        
+                        Button {
+                            stackpath.append("Screen two")
+                        } label: {
+                            Text("Screen Two")
+                        }
+
+                    }
+                    
+                    TextFieldView() // when the keyboear Appear the Tool bar item with placement .keyboard appears
+                    
                 }
             }
             
