@@ -18,7 +18,7 @@ struct NavigationSplitView2: View  {
         } content: {
             if let selectedCategory {
                 Group {
-                    switch selectedCategory {
+                    switch selectedCategory { 
                     case .fruits:
                         List {
                             ForEach(Fruit.allCases, id: \.rawValue) { fruit in

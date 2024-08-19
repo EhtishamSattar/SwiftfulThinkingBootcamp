@@ -12,7 +12,8 @@ import SwiftUI
 struct SwiftfulThinkingBootcampApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            URLSessionExample()
         }
     }
 }
