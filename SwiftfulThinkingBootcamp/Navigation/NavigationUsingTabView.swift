@@ -20,14 +20,14 @@ struct NavigationUsingTabView: View {
             BrowseView()
                 .tabItem{
                     Image(systemName: "globe")
-                    Text("Home")
+                    Text("Browse")
                 
                 }
             
             ProfileView()
                 .tabItem{
                     Image(systemName: "person.fill")
-                    Text("Home")
+                    Text("Profile")
                 
                 }
             
